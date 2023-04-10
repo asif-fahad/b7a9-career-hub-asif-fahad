@@ -41,7 +41,7 @@ const JobDetails = () => {
     return (
         <div>
             <div>
-                <h1 className='text-4xl text center m-10'>Job Details</h1>
+                <h1 className='text-4xl text-center m-10 bg-gray-200 p-10'>Job Details</h1>
             </div>
             <div className='flex flex-col lg:flex-row max-w-5xl mx-auto'>
                 <div className=' gap-10'>
@@ -94,7 +94,7 @@ const JobDetails = () => {
 
                         <h1><span className='font-bold'>Address: </span>{details.location}</h1>
                     </div>
-                    <button onClick={() => handleAddToCard(details)} className='btn bg-violet-700'>Apply Now</button>
+                    <button onClick={() => handleAddToCard(details)} className='font-medium transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full border-transparent border-2  text-gray-700 hover:bg-cyan-400 bg-cyan-200'>Apply Now</button>
                 </div>
             </div>
         </div >

@@ -10,7 +10,6 @@ const Jobs = ({ job }) => {
             <h1>{job_title}</h1>
             <p>{company_name}</p>
             <div className='flex gap-4'>
-
                 <span>{remote_onsite}</span>
                 <span>{fulltime_parttime}</span>
             </div>
@@ -31,7 +30,7 @@ const Jobs = ({ job }) => {
                 </div>
             </div>
             <div>
-                <Link to={`/jobDetails/${id}`} ><button>View Details</button></Link>
+                <Link to={`/jobDetails/${id}`} ><button className='font-medium transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full border-transparent border-2  text-gray-700 hover:bg-cyan-400 bg-cyan-200'>View Details</button></Link>
             </div>
         </div>
     );
