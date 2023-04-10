@@ -2,7 +2,7 @@
     {
         "id": "623853b2614ad5aba311fdd1",
         "index": 0,
-        "logo": "../public/images/Logo/google.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/220px-Google_2015_logo.svg.png",
         "job_title": "Technical Database Engineer",
         "company_name": "Google LLC",
         "remote_onsite": "Remote",
@@ -19,7 +19,7 @@
     {
         "id": "623853b2578e9e6ad1ae0dd5",
         "index": 1,
-        "logo": "../public/images/Logo/netflix.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_onsite": "Onsite",
@@ -36,7 +36,7 @@
     {
         "id": "623853b21fb149d2ee7b76c7",
         "index": 2,
-        "logo": "../public/images/Logo/tesla.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/109px-Tesla_Motors.svg.png",
         "job_title": "Software Engineer",
         "company_name": "Tesla",
         "remote_onsite": "Onsite",
