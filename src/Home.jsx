@@ -21,7 +21,11 @@ const Home = () => {
                 <div>
                     <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 flex flex-col items-center pb-24 text-center lg:pb-56 text-gray-900'>
                         <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text'>
-                            One Step Closer To Your Dream Job
+                            One Step Closer
+                            <br />
+                            To Your
+                            <br />
+                            <span className='text-violet-500' >Dream Job</span>
                         </h1>
                         <p className='my-6 text-xs sm:text-base md:text-lg max-w-2/3 md:max-w-xl max-w-2xl text-gray-900'>
                             Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
