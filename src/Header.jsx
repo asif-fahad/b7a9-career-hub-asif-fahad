@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center'>
+        <div className='flex flex-col lg:flex-row justify-between items-center my-8 p-10 bg-gray-200'>
             <div>
-                <h1>DesheChakri</h1>
+                <h1 className='font-extrabold text-4xl'>DesheChakri</h1>
             </div>
             <div >
                 <ul className='flex justify-between items-center'>
-                    <li className='gap-5'>
-                        <Link to='/'>Home</Link>
-                        <Link to='/statistics'>Statistics</Link>
-                        <Link to='/appliedJobs'>Applied Jobs</Link>
-                        <Link to='/blog'>Blog</Link>
+                    <li className=''>
+                        <Link to='/' className='me-2'>Home</Link>
+                        <Link to='/statistics' className='me-2'>Statistics</Link>
+                        <Link to='/appliedJobs' className='me-2'>Applied Jobs</Link>
+                        <Link to='/blog' className='me-2'>Blog</Link>
                     </li>
                 </ul>
             </div>
