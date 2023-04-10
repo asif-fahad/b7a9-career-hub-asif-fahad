@@ -11,11 +11,11 @@ const AppliedJob = ({ c }) => {
             <div className='flex border w-9/12 mx-auto flex-'>
                 <img src={logo} alt="" className='object-contain w-36' />
                 <div className='review-details'>
-                    <h1>{job_title}</h1>
-                    <h1>{company_name}</h1>
+                    <h1 className="font-bold">{job_title}</h1>
+                    <h1 className="font-bold">{company_name}</h1>
                     <div className='flex gap-4'>
-                        <span>{remote_onsite}</span>
-                        <span>{fulltime_parttime}</span>
+                        <span className="border">{remote_onsite}</span>
+                        <span className="border">{fulltime_parttime}</span>
                     </div>
                     <div className='flex gap-4'>
                         <div className='flex'>

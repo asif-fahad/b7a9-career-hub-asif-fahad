@@ -7,7 +7,7 @@ const Categories = ({ category }) => {
         <div>
             <div className='border'>
                 <img src={logo} alt="" />
-                <h1>{name}</h1>
+                <h1 className="font-bold">{name}</h1>
                 <p>{available}</p>
             </div>
         </div>

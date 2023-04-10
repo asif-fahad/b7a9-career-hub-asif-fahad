@@ -7,11 +7,11 @@ const Jobs = ({ job }) => {
     return (
         <div className='w-80 border'>
             <img src={logo} alt="" className='object-contain' />
-            <h1>{job_title}</h1>
-            <p>{company_name}</p>
+            <h1 className="font-bold">{job_title}</h1>
+            <p className="font-bold">{company_name}</p>
             <div className='flex gap-4'>
-                <span>{remote_onsite}</span>
-                <span>{fulltime_parttime}</span>
+                <span className="border">{remote_onsite}</span>
+                <span className="border">{fulltime_parttime}</span>
             </div>
             <div className='flex gap-4'>
                 <div className='flex'>
