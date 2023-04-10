@@ -9,7 +9,7 @@ const Header = () => {
             </div>
             <div >
                 <ul className='flex justify-between items-center'>
-                    <li>
+                    <li className='gap-5'>
                         <Link to='/'>Home</Link>
                         <Link to='/statistics'>Statistics</Link>
                         <Link to='/appliedJobs'>Applied Jobs</Link>

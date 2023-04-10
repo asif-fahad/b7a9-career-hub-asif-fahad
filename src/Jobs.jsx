@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Jobs = ({ job }) => {
-    console.log(job)
-    const { logo, job_title, company_name, remote_onsite, fulltime_parttime, location, salary } = job;
+
+    const { logo, job_title, company_name, remote_onsite, fulltime_parttime, location, salary, id } = job;
     return (
         <div className='w-80 border'>
             <img src={logo} alt="" className='object-contain' />
@@ -30,7 +31,7 @@ const Jobs = ({ job }) => {
                 </div>
             </div>
             <div>
-                <button>View Details</button>
+                <Link to={`/jobDetails/${id}`} ><button>View Details</button></Link>
             </div>
         </div>
     );
