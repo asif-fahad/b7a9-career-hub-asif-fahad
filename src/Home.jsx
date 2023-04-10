@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Person from '../public/images/All Images/person.png'
 import { useLoaderData } from 'react-router-dom';
 import Categories from './Categories';
+import Jobs from './Jobs';
 
 const Home = () => {
     const categories = useLoaderData()
 
+    const [jobs, setJobs] = useState([]);
+
+    useEffect(() => {
+        fetch('jobs.json')
+            .then(res => res.json())
+            .then(data => setJobs(data))
+    }, [])
+
     return (
         <section>
-            <div className='flex bg-gray-200'>
+            <div className='flex flex-col lg:flex-row bg-gray-200'>
                 <div>
                     <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 flex flex-col items-center pb-24 text-center lg:pb-56 text-gray-900'>
                         <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text'>
@@ -28,17 +37,38 @@ const Home = () => {
                     <img
                         src={Person}
                         alt=''
-                        className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mb-12 mt-12 lg:-mt-40'
+                        className='object-contain'
                     />
                 </div>
             </div >
-            <div className='flex justify-center gap-8 mt-10'>
-                {
-                    categories.map(category => <Categories
-                        key={category.id}
-                        category={category}
-                    ></Categories>)
-                }
+            <div className='mt-10'>
+                <div>
+                    <h1 className='font-extrabold text-4xl text-center'>Job Category List</h1>
+                    <p className='text-xs text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+                <div className='flex justify-center gap-8 mt-10'>
+                    {
+                        categories.map(category => <Categories
+                            key={category.id}
+                            category={category}
+                        ></Categories>)
+                    }
+                </div>
+            </div>
+            <div className='mt-10'>
+                <div>
+                    <h1 className='font-extrabold text-4xl text-center'>Featured Jobs</h1>
+                    <p className='text-xs text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+                <div className='grid grid-cols-2 justify-items-center gap-8 mt-10'>
+                    {
+                        jobs.map(job => <Jobs
+                            key={job.id}
+                            job={job}
+                        >
+                        </Jobs>)
+                    }
+                </div>
             </div>
         </section >
     );
