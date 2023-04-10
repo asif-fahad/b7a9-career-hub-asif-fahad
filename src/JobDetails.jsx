@@ -44,7 +44,7 @@ const JobDetails = () => {
                 <h1 className='text-4xl text-center m-10 bg-gray-200 p-10'>Job Details</h1>
             </div>
             <div className='flex flex-col lg:flex-row max-w-5xl mx-auto'>
-                <div className=' gap-10'>
+                <div className='ms-2 gap-10'>
                     <h1><span className='font-bold'>Job Description:</span> {details.description}</h1>
                     <h1><span className='font-bold'>Job Responsibility:</span> {details.responsibility}</h1>
                     <h1><span className='font-bold'>Educational Requirements:</span>
