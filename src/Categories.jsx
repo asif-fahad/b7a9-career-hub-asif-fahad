@@ -5,9 +5,10 @@ const Categories = ({ category }) => {
     const { id, name, logo, available } = category;
     return (
         <div>
-            <div>
+            <div className='border'>
                 <img src={logo} alt="" />
                 <h1>{name}</h1>
+                <p>{available}</p>
             </div>
         </div>
     );

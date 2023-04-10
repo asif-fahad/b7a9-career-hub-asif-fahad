@@ -32,7 +32,7 @@ const Home = () => {
                     />
                 </div>
             </div >
-            <div>
+            <div className='flex justify-center gap-8 mt-10'>
                 {
                     categories.map(category => <Categories
                         key={category.id}
