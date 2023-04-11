@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -8,13 +8,20 @@ const Header = () => {
                 <h1 className='font-extrabold text-4xl'>DesheChakri</h1>
             </div>
             <div >
-                <ul className='flex justify-between items-center'>
-                    <li className=''>
-                        <Link to='/' className='me-2'>Home</Link>
-                        <Link to='/statistics' className='me-2'>Statistics</Link>
-                        <Link to='/appliedJobs' className='me-2'>Applied Jobs</Link>
-                        <Link to='/blog' className='me-2'>Blog</Link>
+                <ul className='flex justify-between items-center gap-2 lg:gap-5'>
+
+                    <li>
+                        <NavLink to='/' className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}>Home</NavLink></li>
+                    <li>
+                        <NavLink to='/statistics' className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}>Statistics</NavLink>
                     </li>
+                    <li>
+                        <NavLink to='/appliedJobs' className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}>Applied Jobs</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/blog' className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}>Blog</NavLink>
+                    </li>
+
                 </ul>
             </div>
             <div>

@@ -1,17 +1,20 @@
 import { useLoaderData } from 'react-router-dom';
 import AppliedJob from './AppliedJob';
+import { useState } from 'react';
 
 const AppliedJobs = () => {
     const cart = useLoaderData()
 
+    const [filter, setFilter] = useState(cart)
 
-
-    const handleOnsite = event => {
-
+    const handleOnsite = () => {
+        const filterOnsite = cart.filter(obj => obj.remote_onsite === "Onsite");
+        setFilter(filterOnsite);
     }
 
-    const handleRemote = event => {
-
+    const handleRemote = () => {
+        const filterRemote = cart.filter(obj => obj.remote_onsite === "Remote");
+        setFilter(filterRemote);
     }
 
     return (
@@ -23,7 +26,7 @@ const AppliedJobs = () => {
             </div>
 
             {
-                cart.map(c => <AppliedJob
+                filter.map(c => <AppliedJob
                     key={c.id}
                     c={c}
                 ></AppliedJob>)
