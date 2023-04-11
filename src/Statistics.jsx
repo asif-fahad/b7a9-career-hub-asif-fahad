@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
 
@@ -53,19 +53,17 @@ const Statistics = () => {
                 <h1 className='text-4xl text-center m-10 bg-gray-200 p-10'>Statistics</h1>
             </div>
             <ResponsiveContainer width="100%" height={400}>
-                <LineChart
+                <AreaChart
                     // width={370}
                     // height={500}
                     data={marksArray}
                 >
-                    <Line dataKey="marks"></Line>
+                    <Area dataKey="marks"></Area>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis></YAxis>
                     <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="marks" stroke="#8884d8" strokeDasharray="5 5" />
-                </LineChart>
+                </AreaChart>
             </ResponsiveContainer>
         </div >
     );
