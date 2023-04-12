@@ -5,9 +5,9 @@ const Blog = () => {
     return (
         <div>
             <div>
-                <h1 className='bg-image text-4xl text-center m-10 bg-gray-200 p-10'>Blog</h1>
+                <h1 className='bg-image text-4xl text-center m-0 bg-gray-200 p-10'>Blog</h1>
             </div>
-            <div className='ms-5'>
+            <div className='ms-5 mt-5'>
                 <div>
                     <div className='font-bold text-2xl'>
                         a. When should you use context API?

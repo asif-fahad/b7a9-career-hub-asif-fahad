@@ -24,7 +24,7 @@ const Home = () => {
         <section>
             <div className='flex flex-col lg:flex-row bg-gray-200'>
                 <div>
-                    <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 flex flex-col items-center pb-24 text-center lg:pb-56 text-gray-900'>
+                    <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 flex flex-col items-center pb-5 text-center lg:pb-56 text-gray-900'>
                         <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text'>
                             One Step Closer
                             <br />

@@ -7,35 +7,20 @@ const JobDetails = () => {
 
     // console.log(dynamic)
     const [details, setDetails] = useState([]);
-    const [cart, setCart] = useState([]);
+
     const data = useLoaderData()
     // console.log(data)
 
     const handleAddToCard = product => {
         // console.log(product)
-        let newCart = []
-        const exists = cart.find(
-            existingProduct => existingProduct.id === product.id
-        )
-        if (!exists) {
-            product.quantity = 1
-            newCart = [...cart, product]
-        } else {
-            const rest = cart.filter(
-                existingProduct => existingProduct.id !== product.id
-            )
-            exists.quantity = exists.quantity + 1
-            newCart = [...rest, exists]
-        }
 
-        setCart(newCart)
         addToDb(product.id)
     }
 
     useEffect(() => {
         const detailsData = data.find(dt => dt.id === dynamic.id);
         setDetails(detailsData)
-        console.log(detailsData)
+        // console.log(detailsData)
     }, [])
 
     return (

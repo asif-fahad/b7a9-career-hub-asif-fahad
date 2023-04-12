@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-between items-center my-8 p-10 bg-gray-200'>
+        <div className='flex flex-col lg:flex-row justify-between items-center   bg-gray-200'>
             <div>
-                <h1 className='font-extrabold text-4xl'>DesheChakri</h1>
+                <h1 className='ms-3 font-extrabold text-4xl'>DesheChakri</h1>
             </div>
             <div >
                 <ul className='flex justify-between items-center gap-2 lg:gap-5'>
