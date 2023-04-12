@@ -5,7 +5,7 @@ const Jobs = ({ job }) => {
 
     const { logo, job_title, company_name, remote_onsite, fulltime_parttime, location, salary, id } = job;
     return (
-        <div className='w-80 border'>
+        <div className='w-80 p-5 border'>
             <img src={logo} alt="" className='object-contain' />
             <h1 className="font-bold">{job_title}</h1>
             <p className="font-bold">{company_name}</p>

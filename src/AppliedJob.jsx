@@ -8,7 +8,7 @@ const AppliedJob = ({ c }) => {
     return (
         <div>
 
-            <div className='flex border w-full lg:w-8/12 mx-auto mt-5'>
+            <div className='flex border w-full p-2 lg:w-8/12 mx-auto mt-5'>
                 <div className="ms-4">
                     <img src={logo} alt="" className='object-contain w-36 h-36' />
                     <div className='review-details'>

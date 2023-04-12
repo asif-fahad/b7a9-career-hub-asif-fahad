@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from './utilities/fakedb';
+import './JobDetails.css'
 
 const JobDetails = () => {
     const dynamic = useParams()
@@ -26,9 +27,9 @@ const JobDetails = () => {
     return (
         <div>
             <div>
-                <h1 className='text-4xl text-center m-10 bg-gray-200 p-10'>Job Details</h1>
+                <h1 className='bg-image text-4xl text-center m-0 bg-gray-200 p-10'>Job Details</h1>
             </div>
-            <div className='flex flex-col lg:flex-row max-w-5xl mx-auto'>
+            <div className='flex flex-col lg:flex-row max-w-5xl mt-4 mx-auto'>
                 <div className='ms-2 gap-10'>
                     <h1><span className='font-bold'>Job Description:</span> {details.description}</h1>
                     <h1><span className='font-bold'>Job Responsibility:</span> {details.responsibility}</h1>
