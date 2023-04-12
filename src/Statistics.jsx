@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import './Statistics.css'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
@@ -50,7 +51,7 @@ const Statistics = () => {
     return (
         <div>
             <div>
-                <h1 className='text-4xl text-center m-10 bg-gray-200 p-10'>Statistics</h1>
+                <h1 className='bg-image text-4xl text-center m-10 bg-gray-200 p-10'>Statistics</h1>
             </div>
             <ResponsiveContainer width="100%" height={400}>
                 <AreaChart
